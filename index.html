@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopyyyyy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Check if the user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            // Redirect to the login page if not logged in
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Shopyyyyy</h1>
+        <nav>
+            <a href="index.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <section id="products">
+        
+        
+    </section>
+    
+
+
+    <footer>
+        <p>&copy; 2024 Shopyyyyy</p>
+        
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="products.js"></script> 
+</body>
+</html>

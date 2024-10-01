@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopyyyyy - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+       
+        if (!localStorage.getItem('loggedIn')) {
+            
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Shopyyyyy</h1>
+        <nav>
+            <a href="index.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <h2>Shopyyyyy</h2>
+        <div id="cart-items">
+            
+        </div>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button id="checkout-btn" disabled onclick="location.href='checkout.html'">Proceed to Checkout</button>
+        <br><br>
+        <button onclick="location.href='index.html'">shop more</button>
+    </section>
+
+    <footer>
+        <p>&copy; Shopyyyyy</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
